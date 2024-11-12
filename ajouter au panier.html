@@ -1,0 +1,360 @@
+
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      
+        <title>kaylie Makeup</title>
+
+       
+        <link rel="shortcut icon" href="fav-icon.png" style="width: 50PX"/>
+        <link rel="stylesheet" href="all.min.css">
+        <link rel="stylesheet" href="javascript.js">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="first page.html">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="kaylie skin.html">
+        <link rel="stylesheet" href="kaylie cosmitices.html">
+      <link rel="stylesheet" href="KAYLIE BABY.html">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> 
+
+
+    <style>
+     
+     .container{
+    display: flex;
+    margin: 3rem 150px;
+}
+.cart{
+    width: 65%;
+    background-color: #f2f2f2;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 30px 0;
+}
+table{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+.table-head{
+    color: white;
+    background-color: #18bdfe;
+}
+.head-img{
+    text-align: left;
+    padding-left: 7px;
+}
+.summary{
+    background-color: #f2f2f2;
+    width: 35%;
+    margin-left: 20px;
+}
+.detail{
+    margin: 10px 0;
+    padding: 0 10px;
+    align-items: center;
+    background-color: #18bdfe;
+    color: white;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+input{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    margin: 15px 0;
+    padding: 7px;
+}
+button{
+    border: none;
+    background-color: red;
+    padding: 8px 30px;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.checkout{
+    width: 100%;
+    background-color: #18bdfe;
+}
+button:hover, .checkout:hover{
+    background-color: #333;
+}
+.img-box{
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border:  1px solid #18bdfe;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img{
+    max-width: 43px;
+    max-height: 43px;
+    border-radius: 50%;
+}
+.fa-trash{
+    color: #18bdfe;
+}
+.fa-trash:hover{
+  color:#333;
+}
+    </style>
+        <script src="https://kit.fontawsome.com/92d70a2fd8.js " crossorigin="anonymous"></script>
+    </head>
+    <body>
+    
+      
+        <header>
+           
+     
+          <a href="" class="logo">
+              <img src="logo.png" alt="">
+          </a>
+  
+          <ul class="navmenu">
+              <li><a href="#main">home</a></li>
+              <li><a href="kaylie cosmitices.html">KYLIE Cosmetics</a></li>
+              <li><a href="kaylie skin.html">KYLIE Skin</a></li>
+              <li><a href="KAYLIE BABY.html">KYLIE Baby</a></li>
+              <li><a href="#about">about</a></li>
+
+  
+          </ul>
+      
+        <div class="search-box">
+          <input type="search" placeholder="Search Product's Here" required/>
+         
+              <i class="fa-solid fa-magnifying-glass"></i>
+          
+      </div>
+     
+      <div class="nav-btns">
+          <a href="#" class="nav-user">
+              <i class="fa-regular fa-user"></i>
+          </a>
+          <a href="#" class="nav-cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+      </div>
+        </header>
+
+        <div class="container">
+          <div class="cart">
+            <div class="top">
+              <h2 > shopping cart</h2>
+              <h2 id="itemA">4Items</h2>
+            </div>
+            <table cellspacing="0" class="head-img">
+<tr>
+  <th width="150px" class="head-img"> Image</th>
+  <th width="360px"> Name</th>
+  <th width="150px"> price</th>
+  <th width="70px">Delete</th>
+</tr>
+ </table>
+<table id="root" cellspacing="0">
+
+</table>
+<hr>
+
+          </div>
+
+
+
+
+
+
+          <div class="summary">
+            <div class="top">
+              <h2>Order summary</h2>
+            </div>
+<div class="detail">
+  <h2 id="itemB">4 Items</h2>
+  <h2 id="totalA">200$</h2>
+</div>
+
+<div style="margin-top: 30px;padding: 0 30PX;">
+
+<h2>shopping</h2>
+<input type="text"  placeholder="starterd ">
+<h2>Promo code</h2>
+<input type="text"  id="promocode " placeholder="entrer your code promo">
+<button class="first-btn" id="promo" onclick="promo()">Apply</button>
+
+</div>
+<hr>
+<div class="top">
+  
+  <h2>Total</h2>
+  <h2 class="totalB"> 200$</h2>
+</div>
+
+
+<div style="padding: 0 10px; margin-bottom: 20px;">
+<button class="chechout"> check out</button>
+
+</div>
+          </div>
+        </div>
+
+
+
+
+
+
+<footer >
+    <div class="footer-container">
+        <!--**comoany-box**-->
+        <div class="footer-company-box">
+            <!--logo-->
+            <a href="#" class="footer-logo"><img src="IMG_9814.WEBP" alt="" width="200px"></a>
+            <!--details-->
+            <p>" HS-WEB DEVELOPER "<br>
+                Developer |  , Student  DD101 At The OFPPT Of Gestion And Information ,Yakoub ELmansor Rabat, The first Level.</p>
+            <!--social-box-->
+            <div class="footer-social">
+                <a href="https://www.facebook.com/KylieJenner"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://instagram.com/kyliejenner?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.twitter.com/KylieJenner"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.snapchat.com/KylieJenner"><i class="fa-brands fa-snapchat"></i></a>
+            </div>
+        </div>
+        <!--**link-box***-->
+        <div class="footer-link-box">
+            <strong>Main Link's</strong>
+            <ul>
+                <li><a href="first page.html">Home</a></li>
+                <li><a href="kaylie cosmitices.html">kaylie cosmitices</a></li>
+                <li><a href="kaylie skin.html">kaylie skin</a></li>
+                <li><a href="KAYLIE BABY.html">kaylie baby</a></li>
+                <li><a href="">jeux </a></li>
+            </ul>
+        </div>
+        
+    </div>
+    
+
+    <!--**bottom**********************-->
+    <hr>
+    <div class="footer-bottom">
+        <span class="copyright"> Created By <strong>laabidi & fardani </strong> | &copy; Copyright 2023 - All rights reserved. </span>
+    </div>
+</footer>
+
+
+
+
+
+
+<script>
+
+
+                            
+                                
+
+const product =[
+    {
+        image: 'imag1.jpg',
+        title: 'Z Flip Foldable Mobile',
+        price: 120
+    },
+    {
+        image: 'image2.jpg',
+        title: 'Air Pods Pro',
+        price: 150
+    },
+    {
+        image: 'imag3.jpg',
+        title: '250 DSLR Camera',
+        price: 230
+    },
+    {
+        image: 'imag11.jpg',
+        title: 'Headphones',
+        price: 100
+    },
+]
+
+const categories = [...new Set(product.map((item)=>
+    {return item}))];
+
+    function delElement(a){
+        categories.splice(a, 1);
+        displaycart();
+    }
+
+    function promo(){
+        let promocode=document.getElementById('promocode').value;
+        if(promocode==1234){
+            displaycart(50);
+        }
+        else(
+            prompt("Enter correct promo code")
+        )
+    }
+
+function displaycart(c){
+    let j=0, total=0;
+    document.getElementById("itemA").innerHTML = categories.length + " Items";
+    document.getElementById("itemB").innerHTML = categories.length + " Items";
+    if(categories.length==0){
+        document.getElementById("root").innerHTML="Your cart is empty";
+
+        document.getElementById("totalA").innerHTML = "$ 00.00";
+        document.getElementById("totalB").innerHTML = "$ 00.00";
+    }
+    else{
+        document.getElementById("root").innerHTML = categories.map((items)=>{
+            let {image, title, price} = items;
+            total = total+price;
+            document.getElementById("totalA").innerHTML = "$ "+ total +".00";
+
+            if(c==50){
+                document.getElementById("totalB").innerHTML="$ "+(total-c)+".00";
+            }else{
+                document.getElementById("totalB").innerHTML="$ "+total+ ".00";
+            }
+
+            return(
+                `<tr>
+                    <td width="150"><div class="img-box"><img class="img" src=${image}></div></td>
+                    <td width="360"><p style='font-size:15px;'>${title}</p></td>
+                    <td width="150"><h2 style='font-size:15px; color:red; '>$ ${price}.00</h2></td>
+                    <td width="70">`+"<i class='fa-solid fa-trash' onclick='delElement("+ (j++) +")'></i></td>"+
+                `</tr>`
+            );
+        }).join('');
+    }
+}
+displaycart();
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
